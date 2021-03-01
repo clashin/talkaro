@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posts</title>
+</head>
+
+<body>
+    <h1>All posts</h1>
+    <a href="/posts/new">Create A post</a>
+    <ul>
+        <% for(let post of posts){%>
+            <li><a href="/posts/<%=post._id%>"> <%=post.title%> </a></li>
+        <%}%>
+    </ul>
+
+</body>
+
+</html>
